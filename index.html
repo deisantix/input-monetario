@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Input Monetável</title>
+</head>
+
+<body>
+    <form action="" style="width: 200px; display: flex; flex-direction: column">
+        <select id="select" name="teste">
+            <option value=".">Select</option>
+            <option value="0">0</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+        </select>
+    
+        <label for="input">Input</label>
+        <input id="input" type="text">
+    </form>
+
+    <script type="module">
+        import InputMonetavel from './js/InputMonetavel.js';
+        window.InputMonetavel = InputMonetavel;
+
+        // const input = document.getElementById('input');
+        const x = new InputMonetavel('input');
+    </script>
+</body>
+</html>
